@@ -1,0 +1,113 @@
+// header styles
+.header_container {
+    padding-left: 20%;
+    padding-right: 20%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include _480() {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+.header__logo {
+    font-size: 2rem;
+    margin-top: 60px;
+    text-align: center;
+}
+
+// .header__menu {
+//     display: flex;
+//     font-family: Montserrat, sans-serif;
+//     font-size: 18px;
+//     font-style: normal;
+//     font-weight: 400;
+//     margin-top: 52px;
+
+//     li {
+//         margin-right: 25px;
+//         position: relative;
+//         a {
+//             color: black;
+//         }
+
+//         ul {
+//             position: absolute;
+//                 top: 100%;
+//                 left: 0;
+//                 display: none;
+//                 list-style: none;
+//                 padding: 0;
+//                 background-color: rgba(0, 125, 215, 0);
+//                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+//                 li {
+//                     a {
+//                         display: block;
+//                         color: #dbdbdb;
+//                         text-decoration: none;
+//                         padding-bottom: 5px;
+//                     }
+//                 }
+//         }
+//     }
+    
+// }
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    margin-top: 52px;
+    padding: 0;
+    font-size: 18px;
+    li {
+        
+        margin-right: 25px;
+        position: relative;
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+
+            span {
+                margin-left: 5px;
+                font-size: 14px;
+            }
+            &:hover {
+                transition: all 0.3s ease-out;
+                color: aqua;
+            }
+        }
+        &:hover > ul {
+            display: block;
+        }
+    }
+}
+
+// Стили для выпадающего меню
+.header__menu ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        margin: 0;
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+}
+
+
