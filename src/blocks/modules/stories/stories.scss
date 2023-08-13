@@ -1,0 +1,116 @@
+// stories styles
+.stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        padding-top: 85px;
+        color: #333;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .stories__subhead {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        color: #A9AFB3;
+        text-align: center;
+        font-family: Lato, sans-serif;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .stories_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .stories_content_block {
+            width: 32%;
+
+            @include _768() {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .stories_content_block__image {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .stories_content_block_author {
+                    display: flex;
+                    position: absolute;
+                    top: 40%;
+                    left: 10%;
+
+                    @include _768() {
+                        top: 70%;
+                    }
+
+                    img {
+                        margin-right: 10px;
+                        height: 3vw;
+                        width: auto;
+
+                        @include _768() {
+                            height: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .stories_foot {
+        display: flex;
+        margin-top: 56px;
+        padding-bottom: 90px;
+
+        @include _768() {
+            margin-top: 20px;
+            padding-bottom: 50px;
+        }
+
+        @include _480() {
+            flex-direction: column;
+        }
+
+        .stories_foot__text {
+            margin-right: 10px;
+            color: #333;
+            text-align: center;
+            font-family: Lato;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+
+            @include _480() {
+                margin-bottom: 10px;
+            }
+        }        
+
+        a {
+            color: #8D4FDB;
+            text-align: center;
+            font-family: Lato;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                color: #6939a5;;
+            }
+        }
+    }
+}
