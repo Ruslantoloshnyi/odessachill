@@ -1,4 +1,16 @@
 // reda-more styles
+#read_section {
+    padding-bottom: 99px;
+
+    @include _768() {
+        padding-bottom: 69px;
+    }
+
+    @include _480() {
+        padding-bottom: 30px;
+    }
+}
+
 .read {
     display: flex;
     flex-direction: column;
@@ -6,6 +18,7 @@
     justify-content: center;
     background-color: #F1F1F1;
     height: 18vw;
+    
 
     @include _600() {
         height: 35vw;
