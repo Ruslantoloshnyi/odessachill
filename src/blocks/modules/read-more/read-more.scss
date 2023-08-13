@@ -1,0 +1,27 @@
+// reda-more styles
+.read {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    height: 18vw;
+
+    @include _600() {
+        height: 35vw;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 21px;
+
+        @include _768() {
+            font-size: 20px;
+        }
+    }
+}

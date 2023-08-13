@@ -1,7 +1,5 @@
 // content styles
-.content {
-    margin-top: 74px;
-    // position: relative;
+.content {    
     background-color: #ffff;
 
     .content__image {
@@ -38,14 +36,8 @@
         }
     }
 
-    ;
-
-
-
-
-
     .content__text {
-        margin-top: 35px;
+        padding-top: 44px;
 
         div {
             width: 90%;
