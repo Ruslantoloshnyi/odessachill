@@ -12,6 +12,11 @@
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
+
+        @include _480() {
+            font-size: 20px;
+            padding-top: 40px;
+        }
     }
 
     .stories__subhead {
@@ -23,6 +28,12 @@
         font-size: 23px;
         font-style: normal;
         font-weight: 400;
+
+        @include _480() {
+            font-size: 12px;
+            margin-top: 12px;
+            margin-bottom: 25px;
+        }
     }
 
     .stories_content {
