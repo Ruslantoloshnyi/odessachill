@@ -85,11 +85,11 @@
     .stories_foot {
         display: flex;
         margin-top: 56px;
-        padding-bottom: 90px;
+        // padding-bottom: 90px;
 
         @include _768() {
             margin-top: 20px;
-            padding-bottom: 50px;
+            // padding-bottom: 50px;
         }
 
         @include _480() {
